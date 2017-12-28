@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BigOne</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.bootcss.com/vue/2.4.4/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.16.2/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+
+  <!-- <p v-for="key in asksList">{{ key.price }}</p> -->
+  <table style="width:100%">
+    <caption>ETH BTC EOS ETH</caption>
+    <tr>
+      <th>ETH 转 BTC 卖价</th>
+    </tr>
+    <tr v-for="key in bidsList">
+      <td >{{key.price}}</td>
+    </tr>
+
+    <tr v-for="key in asksList">
+      <td >{{key.price}}</td>
+    </tr>
+  </table>
+</div>
+<script src="index.js"></script>
+  </body>
+</html>
