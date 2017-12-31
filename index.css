@@ -1,8 +1,72 @@
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+body {
+  font: 14px/1.42857 "Microsoft YaHei", 微软雅黑, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.1em;
 }
-th, td {
-    padding: 5px;
-    text-align: left;
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  padding: 5px;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  width: 280px;
+  padding-left: 10px;
+}
+
+#eth-title {
+  text-align: center;
+}
+
+.coinprice {
+  border: 1px solid #71C4A7;
+}
+
+.coinprice>.title {
+  text-align: center;
+  background: #71C4A7;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.coinprice>.title>h4 {
+  margin: 0;
+}
+
+.coinprice>.content {
+  display: flex;
+  justify-content: center;
+}
+
+.coinprice>.content li {
+  line-height: 22px;
+  height: 22px;
+}
+
+.coinprice>.content p {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.coinprice>.footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid #71C4A7;
+}
+
+.active {
+  color: #fff;
+  background: red;
+  font-weight: bold;
 }
